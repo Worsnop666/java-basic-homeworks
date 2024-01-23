@@ -1,7 +1,7 @@
 package ru.Terekhov.java.basic.homeworks;
 
 import java.rmi.MarshalException;
-import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class HomeWork1 {
@@ -28,12 +28,27 @@ public class HomeWork1 {
         }
     }
 
-    //Задание 1:
+
     public static void greetings() {
         System.out.println("Hello\nWorld\nFrom\nJava");
+        int word1 = (int) Math.random() * 3 + 1;
+        if (word1 == 1) {
+            System.out.println("Hello");
+        }
+        if (word1 == 2) {
+            System.out.println("World");
+        }
+        if (word1 == 3) {
+            System.out.println("From");
+        } else {
+            System.out.println("Java");
+        }
+        int word2 = (int) Math.random() * 3 + 1;
+        int word3 = (int) Math.random() * 3 + 1;
+        int word4 = (int) Math.random() * 3 + 1;
     }
 
-    //Задание 2:
+
     public static void checkSigh(int a, int b, int c) {
         a = (int) (Math.random() * 9) - (int) (Math.random() * 9);
         b = (int) (Math.random() * 9) - (int) (Math.random() * 9);
@@ -46,7 +61,7 @@ public class HomeWork1 {
         }
     }
 
-    //Задание 3:
+
     public static void selectColor() {
         int data = (int) (Math.random() * 30);
         {
@@ -60,7 +75,7 @@ public class HomeWork1 {
         }
     }
 
-    //Задание 4:
+
     public static void compareNumbers() {
         int a = (int) (Math.random() * 9) + 1;
         int b = (int) (Math.random() * 9) + 1;
@@ -71,7 +86,7 @@ public class HomeWork1 {
         }
     }
 
-    //Задание 5:
+
     public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
         delta = (int) (Math.random() * 9);
         initValue = (int) (Math.random() * 9);
