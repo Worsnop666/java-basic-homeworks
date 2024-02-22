@@ -26,7 +26,7 @@ public class Cat {
         if (plate.getFood() > 0) {
             if (isHungry) {
                 System.out.println(name + " покушал");
-                plate.declineFood(1);
+                plate.decreaseFood(1);
                 isHungry = false;
             } else {
                 System.out.println(name + " не голоден");

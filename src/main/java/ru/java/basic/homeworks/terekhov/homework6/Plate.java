@@ -17,17 +17,17 @@ public class Plate {
         }
     }
 
-    public void fillPlate() {
-        if (this.food < this.maxFood) {
-            do {
-                this.food++;
-            } while (this.food == this.maxFood - 1);
+    public void fillPlate(int food) {
+        this.food += food;
+        if (this.food >= maxFood){
+            this.food = maxFood;
+            System.out.println("Тарелка заполнена");
         } else {
-            System.out.println("тарелка полная");
+            System.out.println("В тарелку добавили: " + food + " еды.");
         }
     }
 
-    public void declineFood(int amount) {
+    public void decreaseFood(int amount) {
         if (this.food >= 0) {
             food -= amount;
         } else {
